@@ -1,0 +1,19 @@
+<div id="container">
+
+</div>
+<script>
+    var div,
+    container = document.getElementById("container");
+    for (let i = 0; i < 5; i++) {
+    div = document.createElement("div");
+    div.style.backgroundColor = "#2c2c2c";
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.float = "left";
+    div.style.margin = "5";
+    div.onclick = function() {
+    alert("This is box #" + i);
+    };
+    container.appendChild(div);
+    }
+</script>
